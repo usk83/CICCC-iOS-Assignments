@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G22010" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AutoLayout" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wGn-b0-ZsM">
+                                <rect key="frame" x="141.33333333333337" y="666" width="252.66666666666663" height="50"/>
+                                <color key="backgroundColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="9ja-RO-677"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gA1-4l-jZP">
+                                <rect key="frame" x="250" y="40" width="144" height="46"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ukz-re-S2R">
+                                        <rect key="frame" x="8" y="8" width="128" height="30"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2bm-Qb-WkX">
+                                                <rect key="frame" x="0.0" y="0.0" width="70" height="30"/>
+                                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="70" id="dgj-cY-XhS"/>
+                                                    <constraint firstAttribute="height" constant="30" id="tEz-uL-RlO"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4v7-XH-0Q5">
+                                                <rect key="frame" x="78" y="0.0" width="50" height="30"/>
+                                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="50" id="KWB-Or-KBE"/>
+                                                    <constraint firstAttribute="height" constant="30" id="mVS-vk-vUJ"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="ukz-re-S2R" firstAttribute="bottom" secondItem="gA1-4l-jZP" secondAttribute="bottomMargin" id="hEE-lO-bsT"/>
+                                    <constraint firstItem="ukz-re-S2R" firstAttribute="leading" secondItem="gA1-4l-jZP" secondAttribute="leadingMargin" id="pFS-Ng-3Dn"/>
+                                    <constraint firstItem="ukz-re-S2R" firstAttribute="trailing" secondItem="gA1-4l-jZP" secondAttribute="trailingMargin" id="pjJ-dy-TML"/>
+                                    <constraint firstItem="ukz-re-S2R" firstAttribute="top" secondItem="gA1-4l-jZP" secondAttribute="topMargin" id="pvX-5M-FkF"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="MRo-iN-k5H">
+                                <rect key="frame" x="182" y="110.33333333333331" width="50" height="515.33333333333326"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8nJ-Ue-3bl">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50.000000000000014"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="TPf-2W-B2g"/>
+                                            <constraint firstAttribute="height" constant="50" id="Yon-i2-iPr"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pV2-lz-Bau">
+                                        <rect key="frame" x="0.0" y="232.66666666666669" width="50" height="50"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="3aw-Ew-XO3"/>
+                                            <constraint firstAttribute="width" constant="50" id="xq2-sZ-MMb"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NMa-lC-TVu">
+                                        <rect key="frame" x="0.0" y="465.33333333333331" width="50" height="49.999999999999943"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="dim-gF-jkO"/>
+                                            <constraint firstAttribute="width" constant="50" id="sNH-LI-bge"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="wGn-b0-ZsM" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.61" id="0E4-g8-uzo"/>
+                            <constraint firstItem="MRo-iN-k5H" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="AHo-kd-nDU"/>
+                            <constraint firstAttribute="trailing" secondItem="gA1-4l-jZP" secondAttribute="trailing" constant="20" id="C8p-Of-4nA"/>
+                            <constraint firstItem="gA1-4l-jZP" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="DH4-48-66U"/>
+                            <constraint firstAttribute="trailing" secondItem="wGn-b0-ZsM" secondAttribute="trailing" constant="20" id="LDF-yQ-h5G"/>
+                            <constraint firstItem="MRo-iN-k5H" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Net-gk-t8t"/>
+                            <constraint firstItem="MRo-iN-k5H" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.7" id="Vij-kK-9Xf"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="wGn-b0-ZsM" secondAttribute="bottom" constant="20" id="rpq-dw-ybM"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="137.18140929535232"/>
+        </scene>
+    </scenes>
+</document>
