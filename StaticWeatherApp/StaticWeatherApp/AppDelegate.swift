@@ -21,11 +21,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.rootViewController = tabVC
 
         // 5 cities
-        let vancouver = City(name: "Vancouver", temp: 15, precipitation: 95, icon: "canada", summary: "Rainy")
-        let verona = City(name: "Verona", temp: 22, precipitation: 20, icon: "italy", summary: "Cloudy")
-        let tokyo = City(name: "Tokyo", temp: 24, precipitation: 40, icon: "japan", summary: "Sunny")
-        let saoPaulo = City(name: "Sao Paulo", temp: 32, precipitation: 20, icon: "brazil", summary: "Sunny")
-        let seoul = City(name: "Seoul", temp: 35, precipitation: 50, icon: "skorea", summary: "Sunny")
+        let vancouver = City(name: "Vancouver", temp: 15, precipitation: 95, icon: "canada", summary: "Rainy", country: Country(name: "Canada", flagEmoji: "🇨🇦"))
+        let verona = City(name: "Verona", temp: 22, precipitation: 20, icon: "italy", summary: "Cloudy", country: Country(name: "Italy", flagEmoji: "🇮🇹"))
+        let tokyo = City(name: "Tokyo", temp: 24, precipitation: 40, icon: "japan", summary: "Sunny", country: Country(name: "Japan", flagEmoji: "🇯🇵"))
+        let saoPaulo = City(name: "Sao Paulo", temp: 32, precipitation: 20, icon: "brazil", summary: "Sunny", country: Country(name: "Brazil", flagEmoji: "🇧🇷"))
+        let seoul = City(name: "Seoul", temp: 35, precipitation: 50, icon: "skorea", summary: "Sunny", country: Country(name: "Korea", flagEmoji: "🇰🇷"))
 
         let vanVC = CityViewController()
         vanVC.city = vancouver

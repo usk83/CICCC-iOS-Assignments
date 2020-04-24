@@ -13,6 +13,10 @@
 		701AA5B92451126800A65680 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 701AA5B72451126800A65680 /* LaunchScreen.storyboard */; };
 		701AA5C12451137600A65680 /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 701AA5C02451137600A65680 /* City.swift */; };
 		701AA5C32451138E00A65680 /* CityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 701AA5C22451138E00A65680 /* CityViewController.swift */; };
+		707D96AB2453A13200A15E51 /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707D96AA2453A13200A15E51 /* Country.swift */; };
+		707D96B12453AA9600A15E51 /* UILabel+init.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707D96B02453AA9600A15E51 /* UILabel+init.swift */; };
+		707D96B32453B0FD00A15E51 /* UIFont+init.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707D96B22453B0FD00A15E51 /* UIFont+init.swift */; };
+		70A8F926245116920017C861 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A8F925245116920017C861 /* DetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		701AA5BA2451126800A65680 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		701AA5C02451137600A65680 /* City.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
 		701AA5C22451138E00A65680 /* CityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CityViewController.swift; sourceTree = "<group>"; };
+		707D96AA2453A13200A15E51 /* Country.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
+		707D96B02453AA9600A15E51 /* UILabel+init.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILabel+init.swift"; sourceTree = "<group>"; };
+		707D96B22453B0FD00A15E51 /* UIFont+init.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont+init.swift"; sourceTree = "<group>"; };
+		70A8F925245116920017C861 /* DetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,9 +64,13 @@
 		701AA5AD2451126800A65680 /* StaticWeatherApp */ = {
 			isa = PBXGroup;
 			children = (
+				707D96B02453AA9600A15E51 /* UILabel+init.swift */,
+				707D96B22453B0FD00A15E51 /* UIFont+init.swift */,
 				701AA5AE2451126800A65680 /* AppDelegate.swift */,
 				701AA5C02451137600A65680 /* City.swift */,
+				707D96AA2453A13200A15E51 /* Country.swift */,
 				701AA5C22451138E00A65680 /* CityViewController.swift */,
+				70A8F925245116920017C861 /* DetailsViewController.swift */,
 				701AA5B02451126800A65680 /* ViewController.swift */,
 				701AA5B52451126800A65680 /* Assets.xcassets */,
 				701AA5B72451126800A65680 /* LaunchScreen.storyboard */,
@@ -139,10 +151,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				707D96B32453B0FD00A15E51 /* UIFont+init.swift in Sources */,
 				701AA5B12451126800A65680 /* ViewController.swift in Sources */,
 				701AA5AF2451126800A65680 /* AppDelegate.swift in Sources */,
 				701AA5C12451137600A65680 /* City.swift in Sources */,
+				707D96B12453AA9600A15E51 /* UILabel+init.swift in Sources */,
 				701AA5C32451138E00A65680 /* CityViewController.swift in Sources */,
+				707D96AB2453A13200A15E51 /* Country.swift in Sources */,
+				70A8F926245116920017C861 /* DetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,6 +314,7 @@
 				701AA5BF2451126800A65680 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
