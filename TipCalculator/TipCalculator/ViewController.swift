@@ -23,6 +23,9 @@ class ViewController: UIViewController, UITextFieldDelegate {
 
         amountTextField.delegate = self
 
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
+
         let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(dissmissKeyboard))
         view.addGestureRecognizer(tapGestureRecognizer)
 
@@ -32,6 +35,22 @@ class ViewController: UIViewController, UITextFieldDelegate {
 
     @objc func dissmissKeyboard(_ recognizer: UITapGestureRecognizer) {
         view.endEditing(true)
+    }
+
+    @objc func keyboardWillShow(notification: Notification) {
+        if let keyboardSize = (notification.userInfo?[UIKeyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue {
+            if view.frame.origin.y == 0 {
+                view.frame.origin.y -= keyboardSize.height / 2
+            }
+        }
+    }
+    
+    @objc func keyboardWillHide(notification: Notification) {
+        if let keyboardSize = (notification.userInfo?[UIKeyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue {
+            if view.frame.origin.y != 0 {
+                view.frame.origin.y += keyboardSize.height / 2
+            }
+        }
     }
 
     func updateUI() {
