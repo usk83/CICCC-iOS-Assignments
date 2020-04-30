@@ -6,3 +6,4 @@ Assignments of WMAD 403 iOS Development in CICCC
 - [Assignment 2 - AutoLayout (Interface Builder)](./AutoLayout_InterfaceBuilder)
 - [Assignment 3 - StoriesNavigationController](./StoriesNavigationController)
 - [Assignment 4 - Static Weather App (UITabBarController)](./StaticWeatherApp)
+- [Assignment 5 - Tip Calculator (Notification Center)](./TipCalculator)
